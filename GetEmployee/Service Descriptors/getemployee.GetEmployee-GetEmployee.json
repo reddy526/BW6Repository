@@ -1,0 +1,81 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Summary about the new REST service.",
+    "description" : "Summary about the new REST service."
+  },
+  "host" : "localhost:7080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/employee" : {
+      "post" : {
+        "summary" : "",
+        "description" : "",
+        "operationId" : "post-getemployee",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/Employee"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a string to be returned",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      },
+      "get" : {
+        "summary" : "",
+        "description" : "",
+        "operationId" : "get-getemployee",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json", "text/plain" ],
+        "parameters" : [ {
+          "name" : "shortname",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a string to be returned",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Employee" : {
+      "type" : "object",
+      "required" : [ "Address", "PhoneNo", "FullName", "ShortName" ],
+      "properties" : {
+        "ShortName" : {
+          "type" : "string"
+        },
+        "FullName" : {
+          "type" : "string"
+        },
+        "PhoneNo" : {
+          "type" : "string"
+        },
+        "Address" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}
