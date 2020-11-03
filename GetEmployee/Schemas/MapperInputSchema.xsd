@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	 xmlns="http://www.tibco.com/schemas/EComInvoice/Schema.xsd2"
+	 targetNamespace="http://www.tibco.com/schemas/EComInvoice/Schema.xsd2"
+	 elementFormDefault="qualified"
+	 attributeFormDefault="unqualified">
+	<xs:element name="GetEmployee">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Employee" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Employee">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ShortName"/>
+				<xs:element ref="FullName"/>
+				<xs:element ref="PhoneNo"/>
+				<xs:element ref="Address"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ShortName" type="xs:string"/>
+	<xs:element name="FullName" type="xs:string"/>
+	<xs:element name="PhoneNo" type="xs:string"/>
+	<xs:element name="Address" type="xs:string"/>
+</xs:schema>
