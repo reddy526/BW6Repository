@@ -11,7 +11,7 @@
   <artifactId>GetEmployee.application</artifactId>
   <packaging>bwear</packaging>
   <properties>
-   <appSpace>demoappspace</appSpace>
+    <appSpace>demoappspace</appSpace>
     <keystorePath></keystorePath>
     <profile>default.substvar</profile>
     <backup>false</backup>
