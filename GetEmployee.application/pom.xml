@@ -11,7 +11,7 @@
   <artifactId>GetEmployee.application</artifactId>
   <packaging>bwear</packaging>
   <properties>
-    <appSpace>demoappspace</appSpace>
+    <appSpace>demoAppSpace</appSpace>
     <keystorePath></keystorePath>
     <profile>default.substvar</profile>
     <backup>false</backup>
@@ -20,10 +20,10 @@
     <agentPort>8079</agentPort>
     <truststorePassword></truststorePassword>
     <agentAuth></agentAuth>
-    <agentHost>192.168.0.47</agentHost>
+    <agentHost>localhost</agentHost>
     <httpPort>8060</httpPort>
-    <appNode>demoappnode</appNode>
-    <osgiPort>9595</osgiPort>
+    <appNode>demoAppNode</appNode>
+    <osgiPort>8899</osgiPort>
     <appSpaceDesc></appSpaceDesc>
     <redeploy>true</redeploy>
     <keystorePassword></keystorePassword>
